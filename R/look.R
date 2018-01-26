@@ -8,8 +8,8 @@
 #' @examples
 #' look(cars)
 
-look <- function(x, title1) {
-  if (missing(title1))
-    title1 <- paste(deparse(substitute(x))[1])
-  View(x, title = title1)
+look <- function(x, title) {
+  if (missing(title))
+    title <- paste(deparse(substitute(x))[1])
+  View(x, title)
 }
